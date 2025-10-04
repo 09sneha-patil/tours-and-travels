@@ -1,0 +1,354 @@
+body{
+	 
+    /* Background pattern from Toptal Subtle Patterns */
+       height: 200px;
+       width: 100%;
+       background-image: 
+           url("C:\\Users\\jasne\\OneDrive\\Desktop\\travel10.jpg")
+    
+    
+}
+.title-word {
+animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+--color-1: #DF8453;
+--color-2: #3D8DAE;
+--color-3: #E4A9A8;
+}
+
+.title-word-2 {
+--color-1: #DBAD4A;
+--color-2: #ACCFCB;
+--color-3: #17494D;
+}
+
+.title-word-3 {
+--color-1: #ACCFCB;
+--color-2: #E4A9A8;
+--color-3: #ACCFCB;
+}
+
+.title-word-4 {
+--color-1: #3D8DAE;
+--color-2: #DF8453;
+--color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+0%    {color: var(--color-1)}
+32%   {color: var(--color-1)}
+33%   {color: var(--color-2)}
+65%   {color: var(--color-2)}
+66%   {color: var(--color-3)}
+99%   {color: var(--color-3)}
+100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+display: grid;
+place-items: center;  
+text-align: center;
+height: 30vh
+}
+
+.title {
+font-family: "Montserrat", sans-serif;
+font-weight: 50;
+font-size: 7vw;
+text-transform: uppercase;
+}
+
+#top1 {
+
+text-align: center;
+color: black;
+font-size: 40px;
+font-family: 'Brush Script MT', cursive;
+}
+
+/* Navigation bar styling*/
+/*Navbar image styling*/
+#navbar img {
+display: block;
+width: 50px;
+height: 50px;
+margin: auto;
+margin-bottom: 3px;
+}
+
+/*Navbar Functionality*/
+#navbar {
+display: flex;
+flex-direction: column;
+background-color: rgb(243, 242, 242);
+height: 10vh;
+width: 100vw;
+font-family: 'Arial',sans-serif;
+margin-top: 10px;
+border: 2px solid rgb(242, 238, 238);
+}
+
+/*Navbar content functionality*/
+#navcontent {
+display: flex;
+justify-content: center;
+}
+
+/*Navbar content styling*/
+ul li {
+list-style: none;
+margin: 15px;
+border-radius: 20px;
+}
+
+ul li a {
+padding: 15px;
+color: rgb(39, 107, 203);
+text-decoration: none;
+border: 20px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+ul li a:hover {
+color: rgb(214, 209, 209);
+}
+
+#container1 {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100vw;
+height: 63vh;
+}
+
+/*Setting the background image using before pseudo selector*/
+#container1::before {
+content: '';
+background: url("./1.jpg") no-repeat center center/cover;
+width: 100vw;
+height: 59vh;
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: 'Ubuntu Mono', monospace;
+margin-right: 45px;
+font-weight: bold;
+z-index: -1;
+opacity: 0.89;
+border: 2px solid black;
+
+}
+#row1 {
+color: rgb(7, 7, 7);
+font-weight: bold;
+font-size: 2rem;
+text-align: center;
+margin-top: 35px;
+}
+#container3 {
+display: flex;
+justify-content: space-evenly;
+}
+
+
+#row2 {
+width: 30vw;
+height: 30vh;
+box-shadow: 2px 7px 16px 19px rgb(55, 131, 172);
+margin-top: 51px;
+margin-bottom: 51px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+position: relative;
+margin-right: 38px;
+border-radius: 40px;
+}
+
+#row2::before {
+content: '';
+background: url("C:\\Users\\jasne\\OneDrive\\Desktop\\internationaltrip.jpg") no-repeat center center/cover;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 30vw;
+height: 30vh;
+z-index: -1;
+border-radius: 40px;
+}
+
+#row3 {
+position: relative;
+width: 30vw;
+height: 30vh;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+box-shadow: 2px 7px 16px 19px rgb(55, 131, 172);
+;
+margin-top: 51px;
+margin-bottom: 51px;
+
+margin-left: 38px;
+border-radius: 40px;
+}
+
+#row3::before {
+content: '';
+background: url("C:\\Users\\jasne\\OneDrive\\Desktop\\indiatrip.jpg") no-repeat center center/cover;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 30vw;
+height: 30vh;
+z-index: -1;
+border-radius: 40px;
+}
+
+#top3 {
+text-align: center;
+color: rgb(225, 217, 217);
+font-family: 'Ubuntu Mono', monospace;
+border: 40px;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+border-radius: 40px;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+border-radius: 40px;
+
+}
+.travelers {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 40px auto;
+max-width: 1000px;
+color: rgb(13, 12, 12);
+
+}
+
+.customer {
+width: 300px;
+margin-bottom: 20px;
+text-align: center;
+
+
+}
+
+.customer img {
+
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 10px 10px 10px solid rgb(17, 11, 11);
+align-items: center;
+border-style: solid;
+
+
+}
+
+.customer h2 {
+margin-top: 10px;
+font-size: 20px;
+border-style: solid;
+
+
+}
+
+.customer p {
+font-size: 20px;
+
+}
+.customer1 img{
+justify-content: center;
+align-items: center;
+border-style: solid;
+
+}
+.customer1 {
+width: 300px;
+margin-bottom: 20px;
+text-align: center;
+
+}
+
+.customer1 img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 10px 10px 10px solid rgb(17, 11, 11);
+align-items: center;
+
+}
+
+.customer1 h2 {
+margin-top: 10px;
+font-size: 20px;
+border-style: solid;
+
+
+}
+
+.customer1 p {
+font-size: 20px;
+
+}
+.customer1 img{
+justify-content: center;
+align-items: center;
+border-style: solid;
+
+
+}
+footer {
+background-color: #333; /* Background color of the footer */
+color: #fff; /* Text color of the footer */
+padding: 20px; /* Padding around the content inside the footer */
+text-align: center; /* Align the content to the center */
+width:500%;
+}
+
+.footer-content {
+max-width: 1000px; /* Set maximum width for the content */
+margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer-content h3 {
+margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.footer-content p {
+margin: 5px 0; /* Add some space around the paragraphs */
+}
+
+.social-media {
+margin-top: 10px; /* Add some space above the social media icons */
+}
+
+.social-media a {
+display: inline-block; /* Display the icons in a row */
+margin: 0 5px; /* Add some space between the icons */
+}
+
+.social-media img {
+width: 30px; /* Set the width of the social media icons */
+height: 30px; /* Set the height of the social media icons */
+}
+
+
+
+
+
+
